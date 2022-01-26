@@ -1,0 +1,410 @@
+/* ======================================================================== \
+|   forma.lms - The E-Learning Suite                                        |
+|                                                                           |
+|   Copyright (c) 2013 (Forma)                                              |
+|   http://www.formalms.org                                                 |
+|   License  http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt           |
+|                                                                           |
+\ ======================================================================== */
+
+FORMA LMS
+RELEASE CHANGELOG
+
+
+---------------------------------------------------------------------------------------
+forma.lms 2.4.5
+---------------------------------------------------------------------------------------
+Release date: 2021 november
+
+#19951 - Fix Admin user should not see the author filter in the reports
+#19950 - Fix fast subscribe error when admin try to insert a user that has first position in admin users. array_search($id_user, $admin_users, false) retunrs position 0 and comparison "array_search($id_user, $admin_users, false) == false" is true
+- Fix send email on user update
+- fix tinymce
+#19919 - Fix coursereport generation
+#19900 - move all threads before emoticon select in forum and public_forum	830a905fb	carminep89 <carminepepiciello@gmail.com>	23 Jun 2021 at 18:09
+#19890 - Add tag form scorm items in certificate
+#19864 - Remove deprecated constructors - fix show answers of last number_times for ET answer type
+#19863 - fix api course add/update/delete day
+#19862 - fix sum score in function userScore
+#19861 - Filter files in upload question with allowed file formats
+#19860 - Invisible fields for SuperAdmins
+#19854 - report course dates at 00-00-0000
+#19846 - Uppercase first char during users import
+#16623 - Risolto Problema con "only update" e "create and update" Fix duplicati
+#19843 - fix show correct answer in report when show correct answers is enabled
+#19842 - User Object grid - Pagination with many objects
+#19814 - Show materials dots on course catalogue even when course is on sale - added in homecatalogue
+#19841 - Grade book "Disallowed key characters in global data" on delete
+#19840 - User-object grid - link back
+#19839 - Incorrect scoring of questions on tests
+#19836 - fix Error: API not enabled.
+#19827 - Fix DateTime exception in course list when date is not a valid date.
+#19807 - Errore caricamento file in domande di un test
+#19822 - Show additional fields if admin can edit a user profile
+#19816 - Stripslashes in question type upload
+#19815 - fix error during import users anche node changes
+#19814 - Show materials dots on course catalogue even when course is on sale
+#19811 - API not load plugins and events listener
+#19809 - Error with quotes in insert and save advice
+#19806 - fix merge
+#19805 - Fix email text on user subscription
+#19804 - fix catalogue change and current active tab
+#19803 - SSL error during login with chrome
+#19797 - Fix merge
+
+Plus other minor fixes and improvements
+
+---------------------------------------------------------------------------------------
+forma.lms 2.4.4
+---------------------------------------------------------------------------------------
+Release date: 2021 june
+
+#19890 - Add tag form scorm items in certificate
+#19864 - Remove deprecated constructors - fix show answers of last number_times for ET answer type
+#19863 - fix api course add/update/delete day
+#19862 - fix sum score in function userScore
+#19861 - Filter files in upload question with allowed file formats
+#19860 - Invisible fields for SuperAdmins
+#19854 - report course dates at 00-00-0000
+#19846 - Uppercase first char during users import
+#16623 - Risolto Problema con "only update" e "create and update" Fix duplicati
+#19843 - fix show correct answer in report when show correct answers is enabled
+#19842 - User Object grid - Pagination with many objects
+#19814 - Show materials dots on course catalogue even when course is on sale - added in homecatalogue
+#19841 - Grade book "Disallowed key characters in global data" on delete
+#19840 - User-object grid - link back
+#19839 - Incorrect scoring of questions on tests
+#19836 - fix Error: API not enabled.
+#19827 - Fix DateTime exception in course list when date is not a valid date.
+#19807 - Errore caricamento file in domande di un test
+#19822 - Show additional fields if admin can edit a user profile
+#19816 - Stripslashes in question type upload
+#19815 - fix error during import users anche node changes
+#19814 - Show materials dots on course catalogue even when course is on sale
+#19811 - API not load plugins and events listener
+#19809 - Error with quotes in insert and save advice
+#19806 - fix merge
+#19805 - Fix email text on user subscription
+#19804 - fix catalogue change and current active tab
+#19803 - SSL error during login with chrome
+#19797 - Fix merge
+
+---------------------------------------------------------------------------------------
+forma.lms 2.4.3
+---------------------------------------------------------------------------------------
+Release date: 2020 october
+
+#19760 - RISOLTO mettendo class_exist in librerie - Fatal error in creazione oggetto con customfield Fatal error se in oggetto ci sono 2 customfield
+#19705 - Filtro lista tentativi in registro valutazioni
+#19753 corso disabilitato se fuori dal range di tempo di iscrizione
+#19745 - 1111 nel box di conferma iscrizioneFix campi in registro valutazioni dettaglio
+#19731 - root/nodes fields selector
+#19781 - Support SCORMs opening popup - workaround by retrying with an asynchronous request (sendBeacon) if the synchronous request fails (response status 0).
+#16623 - Risolto Problema con "only update" e "create and update" Fix only update	b4560035	Alessandro Micelli <alessandro.micelli@email.it>	23 Oct 2020 at 10:14
+#1780: in case of classroom courses, the certificate does not print the classrooms appointments in case of missing location indication; modified the query to manage data even in this situation.
+#19761 - RISOLTO - Funzione playFieldForUser() di libreria customfield non funzionante Risolto includendo le classi nella cartella "customfield" invece che "field"
+
+
+
+Plus other minor fixes and improvements
+
+---------------------------------------------------------------------------------------
+forma.lms 2.4.2
+---------------------------------------------------------------------------------------
+Release date: 2020 july
+
+#19743 - SCORM fixes and improvements
+#19680 - Registration with code doesn't work wit advanced registration (tree_drop)
+#19684 - Catalogo esterno alla piatta, resta in download
+#19682 - Registro valutazioni: numero di compilazioni errate
+#19683 - Griglia utenti oggetti: Tempo di fruizione 00.00
+#19680 - Registration with code doesn't work wit advanced registration (tree_drop node)
+#19695 - Gestione Feedback autocomplete corsi e competenze
+#19683 - SCORM - Display ISO-8601 Timeformat
+#19701 - Apostrofi in gestione certificati
+#19703 - Apostrofi in modifica introduzione corso
+#19705 - Filtro lista tentativi in registro valutazioni
+#19706 - Log su evento disabilitato
+#19709 - Ordine box corsi e titoli tagliati
+#19710 - Fix tooltip down css
+#19712 - Direct link on object by SSO access
+#19711 - Errata Visualizzazione utenti in EDIT Registro valutazioni
+#19713 - Import GIFT categories
+#19715 - Time problem for format time in scorm tracking 00:00:00.000000
+#19716 - Course boxes hover css
+#19708 - bug + mancata traduzione in catalogo pubblico
+merge  #19723 - Verification register node-code manually in second step
+#19724 - Users list for admin in gradebook
+#19728 - Salvataggio presenze in area docenti
+#19731 - root/nodes fields selector fix normal reg with a root discendent required field
+#19732 - pagination error in gradebook detail
+#19734 - Same values in empty custom fields in certificates associations
+
+
+Plus other minor fixes and improvements
+
+---------------------------------------------------------------------------------------
+forma.lms 2.4.1
+---------------------------------------------------------------------------------------
+Release date: 2020 february 20
+
+#19016 - test objects: fixed issue about mandatory answer on Edge and IE
+#19437 - IO task - add user language import to userconnector
+#19504 - Add username in password recovery email
+#19547 - Added enroll policy management in docebousers connector
+#19563 - Move htmlpurifier cache folder into forma twig cache folder
+#19569 - Mycourses - order categoy filter alphabetically
+#19567 - Free registration with manual code - any code accepted
+#19575 - My courses - include category in filter search
+#19609 - Upgrader - bug upgrade 1.3 - 2.x 
+#19611 - Disable some notification events
+#19614 - Can't delete single certificates 
+#19615 - Manage additional tabs in the mycertificate page 
+#19619 - Edit profile - bug with allow all and disallow mode
+#19612 - Fixed and improved algorithm for computing catalogue tree
+#19617 - Role creation for menu error
+#19620 - User registration - error with uppercase in email field
+#19622 - Issue with course newsletter recipient
+#19669 - Bug Fixes template side
+#19671 - removed external http call to Yui library
+
+Plus other minor fixes and improvements
+
+---------------------------------------------------------------------------------------
+forma.lms 2.4
+---------------------------------------------------------------------------------------
+Release date: 2019 November 26
+
+#1940  | CR IMPROVED  | NEW COURSE API
+#19425 | CR IMPROVED  | NEW USER API 
+#19468 | CR IMPROVED  | DB PERFORMANCE OPTIMIZATIONS
+#19405 | CR IMPROVED  | GENERAL CONFIGURATION PAGE RESTYLING
+#19449 | CR IMPROVED  | USER PROFILE - EXTEND CONFIGURATION OF EDIT MODES
+#19429 | CR IMPROVED  | CERTIFICATES - ALLOW HTML IN COURSE DESCRIPTION
+#19399 | CR IMPROVED  | REPORT SCHEDULING IMPROVEMENT
+#19369 | CR IMPROVED  | ADD ADMIN PERMISSION FOR REPORT SCHEDULER
+#19467 | CR IMPROVED  | USER PROFILE - EXTEND ADMIN INFO
+#19469 | CR IMPROVED  | FORMA VULNERABILITY REPORTS (CISCO 201909)
+#4249  | BUG | CATALOG - SUBSCRIBED USERS CAN ACCESS BEFORE COURSE START DATE
+#19421 | BUG | META CERTIFICATES - NEW "ASSIGNEMENT" TAG
+#19424 | BUG | SCORM PLAYER - SIZE ERROR ON TABLETS
+#19430 | BUG | TEST DOESN'T UNLOCK AFTER SUSPENSION
+#19431 | BUG | Can't use apex in test comments (won't save)
+#19432 | BUG | AN'T USE APEX IN LO TITLE
+#19434 | BUG | USER PANEL - TAB PROFILE - DATAS DISAPPEAR 
+#19440 | BUG | ALLOW NON-ALPHANUMERIC CHARS IN SUBSCRIPTION CODE
+#19445 | BUG | CATALOG - ORDER CATEGORIES ALPHABETICALLY
+#19453 | BUG | UO GRID - TRANSLATE USER STATUS
+#19359 | BUG | CHANGE PASSWORD ON FIRST ACCESS ALLOWS SAME PASSWORD
+#19438 | BUG | GRADEBOOK - ERROR IN FINAL COURSE SCORE CALCULATION
+#19462 | BUG |  Install plugin compatibility php 7.1+ (too few arguments)
+#19465 | BUG | CLASSROOM COURSE ENROLLMENT ERROR IF USING API CALL
+#19466 | BUG | CONFIG - CANCEL BUTTON APPLIES CHANGES
+#19461 | BUG | ERROR ON LO COPY IF A CUSTOM FIELD EXISTS 
+#19473 | BUG | GRADEBOOK - WRONG HISTORY NUMBER FOR SPENDED TESTS
+#19482 | BUG | MYCOURSES - CLOSED CLASSROOM EDITION LISTED AS OPEN
+#19485 | BUG | ADDING A TAB FOR CUSTOM PLUGIN (removed commented code in privacypolicy/show.php)
+#19486 | BUG | SCORM - ERROR IN FUNCTION SCORMINITIALIZEPARAMS
+#19487 | BUG | Enroll Policy: User not added to node when registering with code
+#19496 | BUG | HELPDESK MODULE FIXES
+#19469 | SECURITY FIX | Talos Security Advisory for Forma LMS (TALOS-2019-0902, 0903,0904)
+
+Plus other minor fixes and improvements
+
+---------------------------------------------------------------------------------------
+forma.lms 2.3.0.2
+---------------------------------------------------------------------------------------
+Release date: 2019 December 02
+Patch release - no internal change in version number
+
+#19469 | SECURITY FIX | Talos Security Advisory for Forma LMS (TALOS-2019-0902, 0903,0904)
+
+---------------------------------------------------------------------------------------
+forma.lms 2.3.0.1 -- internal release
+---------------------------------------------------------------------------------------
+Release date: 2019 August 05
+Patch release - no internal change in version number
+
+#19446 | BUG | ZIP package without .htaccess file
+
+---------------------------------------------------------------------------------------
+forma.lms 2.3
+---------------------------------------------------------------------------------------
+Release date: 2019 July 11
+
+#19176 | CR IMPROVED  | NEW CERTIFICATE ALERT ICON
+#19315 | CR IMPROVED  | MYCERTIFICATES - View refactoring with DATATABLES
+#19370 | CR IMPROVED  | CERTIFICATES - IMPROVED ADMIN PERMISSIONS
+#multi | CR IMPROVED  | CERTIFICATES - RELEASE MANAGEMENT PAGE REFACTORED
+#19364 | CR IMPROVED  | EVENTS - ADDED NEW NOTIFICATION EVENTS
+#19298 | CR IMPROVED  | GRADEBOOK - Views refactoring with datatables
+#19274 | CR IMPROVED  | MASSIVE USER EDIT AND UPDATE IMPROVEMENTS
+#19393 | CR IMPROVED  | IO TASKS - Improved user connector
+#19395 | CR IMPROVED  | IO TASK - New connectors for editions and ed. subscriptions
+#multi | CR IMPROVED  | API - Added new APIs for certificates retrieve
+#19311 | CR IMPROVED  | CONFIG - Added option to set smtp ttls false
+#19365 | BUG | HIDE DATE IF FIELD EMPTY
+#19287 | BUG | KB - LO table not shown
+#3675  | BUG | SCORM RESULTS HISTORY DO NOT SHOW
+#19165 | BUG | Controllo privacy e campi obbligatori (19165)
+#19311 | BUG | PROBLEMA INVIO EMAIL IN APPLMS/CONTROLLERS/HELPDESKLMSCONTROLLER: 
+#19354 | BUG | TEST - FINAL SCORE STILL VISIBLE WITH OPTION OFF
+#19358 | BUG | U/O GRID: INCORRECT DATA IN SCORM DETAILS PAGE
+#19360 | BUG | BUG REGISTRO VALUTAZIONI CON OGGETTI SCORM - NON FUNZIONA IL CALCOLO
+#19362 | BUG | GRADEBOOK - ERROR IN CSV EXPORT IF SCORE MISSING
+#19335 | BUG | NEW CUSTOM FIELDS MISSING ON CLEAN INSTALLATIONS
+#19370 | BUG | Improve admin permissions for certificates management
+#19371 | BUG | HTML PAGE WON'T SAVE IF CONTAIN APEX
+#19373 | BUG | GOOGLE ANALYTICS code breaks template
+#19375 | BUG | Courses for sale
+#1938  | BUG | HELPDESK FIXES
+#19389 | BUG | ENROLL POLICIES - Orgchart nodes not shown
+#19385 | BUG | User Catalog - Long category list not scrolling
+#19394 | BUG | ERROR ON USER SUBSCRIPTION
+#19398 | BUG | Now using HTTP_HOST instead of SERVER_NAME
+#19396 | BUG | Report utenti - progress conteggia le cartelle
+#19299 | BUG | Code optimization - Removed old social references
+#19428 | BUG | Course Config - Option <Show only users subscribed> not working properly
+
+Plus many other minor improvements and bugfixes
+
+---------------------------------------------------------------------------------------
+forma.lms 2.2.1
+---------------------------------------------------------------------------------------
+Release date: 2019 April 08
+
+#19340 | BUG | Platform not sending emails - Fixed typo in smtp config
+#19293 | BUG | fixedy query for checking the unused modules inside a menu
+#19353 | BUG | Self-enrollment option does not add enrollment data on course creation
+#19347 | BUG | Locations not shown to admins
+#19343 | BUG | ADMIN not viewing his groups
+#19342 | BUG | WIKI NOT WORKING WITH PHP7
+#19345 | BUG | SCORM Tracking score and history not shown in gradebook
+#19335 | BUG | new custom fields missing on clean installations - Add permission
+#19332 | BUG | Blank page on test options edit with php 7+
+#multi | BUG | User self registration fixes
+#multi | BUG | User/Objects grid fixes and improvements
+#19296 | CR IMPROVED  | Improved Forma::inc() to improve load speed
+#multi | CR IMPROVED  | Improved password and credentials management in mass user edit and csv update
+#multi | CR IMPROVED  | New events added
+
+---------------------------------------------------------------------------------------
+forma.lms 2.2.0.1 
+---------------------------------------------------------------------------------------
+Release date: 2019 february 26
+Patch release - no internal change in version number
+
+#multi | BUG         | internal version not set
+
+---------------------------------------------------------------------------------------
+forma.lms 2.2 
+---------------------------------------------------------------------------------------
+Release date: 2019 february 26   
+
+#multi | CR NEW      | custom fields feature for learning objects
+#19093 | CR NEW      | smtp configuration upon install and system configuration (available setting in database)
+#19100 | CR NEW      | selective debug modes for testing and developement
+#19177 | CR NEW      | multi page certificates
+#multi | CR IMPROVED | user/object grid module
+#multi | CR IMPROVED | extended userCourses API parameters
+#multi | CR IMPROVED | plugin system (feedback after upload)
+#multi | CR IMPROVED | course menu: new default menu template for courses, removed Self Training menu template for new installations
+#19267 | CR IMPROVED | Gooogle API v.2 support, remove use of G+ profile
+#multi | CR IMPROVED | Core enhancement: template control version
+#multi | CR IMPROVED | Core enhancement: improved event system 
+#multi | CR IMPROVED | Core enhancement: refactored frontend menu
+#multi | CR IMPROVED | Core enhancement: new datatables library to display responsive tables
+#18711 | BUG         | Fixed course labels functionality and mycourses view
+#multi | BUG         | Fixed curricula view on mycourses
+#multi | BUG         | Fixed course logo view on external catalogue
+#multi | BUG         | Gradebook - Fixed error on answer stats percentages
+#multi | BUG         | Template: several layout fixes and improvements
+#multi | LANGUAGE    | updated Portuguese translation
+
+Plus many other minor improvements and bugfixes
+
+---------------------------------------------------------------------------------------
+forma.lms 2.1
+---------------------------------------------------------------------------------------
+Release date: 2018 august 28
+
+#multi | Bug | SECURITY: Vulnerability fixes
+#multi | Bug | SECURITY: added robots.txt
+#18816 | Bug | Import File Test Questions . regular expression not detect correct
+#18775 | Bug | Privacy - OrgChart dependencies not deleted
+#18681 | Bug | Privacy acceptance on login always takes to catalog 
+#18737 | Bug | Privacy is always mandatory even if config unchecked
+#6949  | Bug | File upload customfield not working on user registration
+#18684 | Bug | UI Fixes
+#18985 | Bug | Test: MC question passed even with wrong answers
+#19016 | Bug | Test:  mandatory answers option not working properly
+#18830 | Bug | Fixed connection method during installation
+#18925 | Bug | API error with apex parameters and double key
+#18909 | Bug | The database informations are correctly gathered
+#18817 | Bug | Fix template path inside LmsController
+#18808 | Bug | Error on moderated registration by admins
+#multi | Bug | Languages: several missing translation keys added
+#multi | Change Request | OrgChart custom fields
+#multi | Change Request | Added editor in privacy policy management 
+#multi | Change Request | View all permission now applies only to admins
+
+---------------------------------------------------------------------------------------
+forma.lms 2.0
+---------------------------------------------------------------------------------------
+Release date: 2018 june 19
+
+
+CORE ENANCHEMENTS
+
+- PHP 7 compatibility
+- MVC modules refactored: my courses, catalog, mycertificates, gradebook, and more
+- New Customfields for core objects customization (course, test LO)
+- New - log sql script feature
+- New password chryptography method (BCRYPT)
+- Improved Privacy management for GDPR compliance
+- Removed Flash Graphs (introduced new jquery graph engine)
+- Refactored authentication (plugin)
+- Updated PLUGIN management system
+- New languages (HE) and Language updates (IT, EN, FR, IT, FI)
+- Performance improvements on user management
+- API and Connectors improvements
+- Vulnerability Fixes
+- Dozens of bug fixes and minor changes
+
+
+LAYOUT & UX
+
+- New Responsive Layout
+- Global stylesheet refactoring, introducing SASS (take a look at the included KSS 
+  styleguide under /templates/standard/styleguide/section-3.html)
+- Simplified general user navigation and usability improvements
+- Introduced Bootstrap/jQuery framework
+- Refactored and redesigned courselist and course catalog pages
+- Refactored and redesigned gradebook
+- Refactored and redesigned course menu
+- New user panel
+- Forum restyling
+- LMS home page management (options in main config)
+- Redesigned administration menu
+- Re-arranged system configuration options
+
+
+GENERAL LMS FUNCTIONALITIES
+
+- New - administrator permissions in course teacher area 
+- New - Retain answers of all test sessions
+- Updated TinyMCE text editor
+- Improved - Import Users: mantain csv names case, enanched password control
+- New detailed export in User data grid
+- New - Edit course completion date for users
+- Improved - Access details added in Users-Object Grid
+- Improved Certificate Management (Massive download, advanced search)
+- Double Opt-In - New users listed as waiting users until they click on confirmation link
+
+
+REMOVED FEATURES
+
+- Public administrators
+- Course graphs
+- Assessment (admin/elearning/assessment)
+
